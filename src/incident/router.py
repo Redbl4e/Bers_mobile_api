@@ -5,14 +5,14 @@ from sqlalchemy import select, text
 from sqlalchemy.ext.asyncio import AsyncSession
 from starlette.responses import FileResponse
 
-from auth.config import fastapi_users
-from auth.models import User
-from config import MEDIA_PATH, POSTS_PATH
-from database import get_async_session
-from incident.models import Incident
-from incident.schemas import IncidentReadModel, Categories, PostReadModel
-from incident.services import save_incident_to_db, save_post_to_db, change_incident_status
-from incident.utils import get_unique_filename, save_file, get_address_from_coords
+from src.auth.config import fastapi_users
+from src.auth.models import User
+from src.config import MEDIA_PATH, POSTS_PATH
+from src.database import get_async_session
+from src.incident.models import Incident
+from src.incident.schemas import IncidentReadModel, Categories, PostReadModel
+from src.incident.services import save_incident_to_db, save_post_to_db, change_incident_status
+from src.incident.utils import get_unique_filename, save_file, get_address_from_coords
 
 router = APIRouter(
     prefix="/incidents",

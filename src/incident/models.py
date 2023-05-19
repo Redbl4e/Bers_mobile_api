@@ -5,7 +5,7 @@ from sqlalchemy import Integer, DECIMAL, String, Boolean, TIMESTAMP, func, Colum
     CheckConstraint
 from sqlalchemy.orm import Mapped, mapped_column, declarative_base
 
-from auth.models import User
+from src.auth.models import User
 
 IncidentBase = declarative_base()
 

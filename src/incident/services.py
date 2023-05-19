@@ -4,9 +4,9 @@ from pathlib import Path
 from sqlalchemy import insert, update
 from sqlalchemy.ext.asyncio import AsyncSession
 
-from auth.models import User
-from incident.models import Incident, PostIncident
-from incident.schemas import Categories
+from src.auth.models import User
+from src.incident.models import Incident, PostIncident
+from src.incident.schemas import Categories
 
 
 async def save_incident_to_db(

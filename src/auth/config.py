@@ -4,10 +4,10 @@ from fastapi_users.authentication import CookieTransport, BearerTransport
 from fastapi_users.authentication import JWTStrategy, AuthenticationBackend
 from fastapi_users.authentication.strategy import AccessTokenDatabase, DatabaseStrategy
 
-from auth.manager import get_user_manager
-from auth.models import User, AccessToken
-from auth.utils import get_access_token_db
-from config import SECRET_AUTH
+from src.auth.manager import get_user_manager
+from src.auth.models import User, AccessToken
+from src.auth.utils import get_access_token_db
+from src.config import SECRET_AUTH
 
 bearer_transport = BearerTransport(tokenUrl="auth/login")
 

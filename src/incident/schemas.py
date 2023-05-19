@@ -27,7 +27,7 @@ class PostReadModel(BaseModel):
     user_id: int
     title: str
     media_path: str | None = Field(
-	default=None
+        default=None
     )
     created_at: datetime
 

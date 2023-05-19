@@ -7,7 +7,7 @@ from fastapi import UploadFile
 from geopy import Yandex
 from geopy.location import Location
 
-from config import MEDIA_PATH, YANDEX_GEOCODER_API_KEY
+from src.config import MEDIA_PATH, YANDEX_GEOCODER_API_KEY
 
 
 def get_address_from_coords(longitude: float, latitude: float) -> str:

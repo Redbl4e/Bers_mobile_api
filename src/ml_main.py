@@ -1,5 +1,5 @@
 import asyncio
-import time
+
 from datetime import datetime
 
 from sqlalchemy import select
@@ -10,8 +10,7 @@ from src.database import async_session_maker, get_async_session
 from src.incident.models import Incident
 from ml.model import training_model_and_predict_incidents_ai
 from ml.data_preparation import prepare_data
-from src.incident.schemas import Categories
-from ml.test import test
+
 
 
 async def getting_data_from_db():
